@@ -22,9 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Train Artifacts
-        run: python scripts/train.py
-
       - name: Run Pytest Suite
         run: pytest tests/
 
